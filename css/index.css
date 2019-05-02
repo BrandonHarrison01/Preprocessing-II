@@ -1,3 +1,6 @@
+.flex-border {
+  border: 1px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +170,26 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px dashed #C0C0C0;
+  margin: 20px auto 0;
+  padding-bottom: 20px;
+  width: 85%;
+  max-width: 1000px;
+}
+header nav {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  padding: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
 }
 .footer {
   width: 100%;
