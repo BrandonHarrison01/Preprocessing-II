@@ -1,6 +1,9 @@
 .flex-border {
   border: 1px solid red;
 }
+.divide-border {
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -202,6 +205,10 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home article div {
+  padding: 20px 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -247,4 +254,13 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
 }
