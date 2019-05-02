@@ -1,3 +1,8 @@
+@keyframes color-fade {
+  to {
+    background-color: #17A2B8;
+  }
+}
 .flex-border {
   border: 1px solid red;
 }
@@ -204,7 +209,7 @@ header {
   }
 }
 header nav {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -214,10 +219,15 @@ header nav {
   }
 }
 header nav a {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
+  border-radius: 3px;
+}
+header nav a:hover {
+  animation-name: color-fade;
+  animation-duration: 1s;
 }
 .footer {
   width: 100%;
