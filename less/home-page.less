@@ -1,21 +1,42 @@
 .home {
 
+  article div {
+    padding: 20px 0;
+    .divide-border();
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+  
+      .boat-dock {
+        order: 9;
+      }
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -42,6 +63,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -52,10 +77,80 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .divide-border();
+
+    @media @mobile {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto 30px;
+      }
+    }
+
+    .btn {
+      .btn-style (80%);
+
+      @media @mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  .input-section {
+    padding: 25px 0;
+
+    .user-input {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+
+      @media @mobile {
+        flex-direction: column;
+      }
+    }
+
+    button {
+      .btn-style (20%);
+      display: block;
+      margin: 40px auto 20px;
+    }
+
+    .vac-type {
+      font-size: 1.5rem;
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      input {
+        margin: 10px;
+      }
+
+      select {
+        margin: 30px 0;
+        font-size: 1.5rem;
+        padding: 5px;
+        border-radius: 3px;
+        width: 250px;
+      }
+    }
+
+    .user-info {
+      font-size: 1.5rem;
+      
+      input {
+      margin: 5px 0 20px;
+      width: 250px;
+      border-radius: 3px;
+      padding: 5px;
+      }
     }
   }
 }// home
